@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,5 +12,10 @@ public class ProdutoController {
       private final ProdutoRepository produtoRepository;
       public ProdutoController(ProdutoRepository produtoRepository){
         this.produtoRepository = produtoRepository;
+      }
+
+      @PostMapping("/cadastrar")
+      public static void cadastrar(){
+        
       }
 }
